@@ -18,6 +18,7 @@ namespace Hero
 
         static void Main(string[] args)
         {
+            #region Hero
             /*Create new instance of Hero*/
             Hero Kobe = new Hero("Kobe");
 
@@ -35,11 +36,27 @@ namespace Hero
             {
             Kobe.Fight();
             }
-            
-            
-            
-            
-            
+            #endregion
+
+            Console.WriteLine();
+
+            #region SuperHero
+            /*Create object of new SuperHero*/
+            SuperHero Ultron = new SuperHero("Ultron");
+            Console.WriteLine("=======================");
+            Ultron.Show();
+            Console.WriteLine("=======================");
+            Console.WriteLine("     SUPER POWERS");
+            Console.WriteLine("-----------------------");
+            Ultron.ShowPowers();
+            Console.WriteLine("=======================");
+            for (int i = 0; i < 20; i++)
+            {
+            Ultron.Fight();
+            }
+            #endregion
+
+
         }
     }
 }

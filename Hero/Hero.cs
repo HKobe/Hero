@@ -81,7 +81,7 @@ namespace Hero
          }
         #endregion
 
-        #region Public Hero(string name) , _generateAbilities();
+        #region Public Hero(string _name) , _generateAbilities();
         /// <summary>
         /// Constructor Method, calls generate abilities and passes name value.
         /// </summary>
